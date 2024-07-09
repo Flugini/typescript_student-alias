@@ -15,31 +15,31 @@
 // console.log(`Grade: ${grade}`);
 // console.log(`Unique Symbol: ${uniqueSymbol.toString()}`);
 
-// //Task 2: Define Student Type Alias
+//Task 2: Define Student Type Alias
 
-// type Student = {
-//     studentName: string;
-//     studentId: number;
-//     subjects: string[];
-//     major?: string;
-//     isStudying: boolean;
-//     grade: number;
-//     uniqueSymbol: symbol;
-// }
+type Student = {
+    studentName: string;
+    studentId: number;
+    subjects: string[];
+    major?: string;
+    isStudying: boolean;
+    grade: number;
+    uniqueSymbol: symbol;
+}
 
-// // Create an instance of Student
-// let student: Student = {
-//     studentName: "Alice in Wonderland",
-//     studentId: 123456,
-//     subjects: ["Math", "Science", "Art"],
-//     major: "Computer Science", // This is optional and can be omitted
-//     isStudying: true,
-//     grade: 2,
-//     uniqueSymbol: Symbol("uniqueId")
-// };
+// Create an instance of Student
+let student: Student = {
+    studentName: "Alice in Wonderland",
+    studentId: 1234567,
+    subjects: ["Math", "Science", "Art"],
+    major: "Computer Science", // This is optional and can be omitted
+    isStudying: true,
+    grade: 2,
+    uniqueSymbol: Symbol("uniqueId")
+};
 
-// // Log the student object to the console to verify its properties
-// console.log(student);
+// Log the student object to the console to verify its properties
+console.log(student);
 
 //Global Scope
 let globalVariable: string = "I'm global";
